@@ -1,0 +1,2422 @@
+{
+  "version": "2.0.6",
+  "count": 604,
+  "translations": [
+    {
+      "key": "label:\"New Conversation\"",
+      "value": "label:\"新建对话\""
+    },
+    {
+      "key": "label:\"Create Project\"",
+      "value": "label:\"创建项目\""
+    },
+    {
+      "key": "label:\"Command Palette\"",
+      "value": "label:\"命令面板\""
+    },
+    {
+      "key": "label:\"Toggle Fullscreen\"",
+      "value": "label:\"切换全屏\""
+    },
+    {
+      "key": "label:\"Zoom In\"",
+      "value": "label:\"放大\""
+    },
+    {
+      "key": "label:\"Zoom Out\"",
+      "value": "label:\"缩小\""
+    },
+    {
+      "key": "label:\"Reset Zoom\"",
+      "value": "label:\"重置缩放\""
+    },
+    {
+      "key": "label:\"Toggle Developer Tools\"",
+      "value": "label:\"开发者工具\""
+    },
+    {
+      "key": "label:\"Minimize\"",
+      "value": "label:\"最小化\""
+    },
+    {
+      "key": "label:\"Maximize\"",
+      "value": "label:\"最大化\""
+    },
+    {
+      "key": "label:\"Close\"",
+      "value": "label:\"关闭\""
+    },
+    {
+      "key": "label:\"About\"",
+      "value": "label:\"关于\""
+    },
+    {
+      "key": "label:\"Check for Updates\"",
+      "value": "label:\"检查更新\""
+    },
+    {
+      "key": "title:\"File\"",
+      "value": "title:\"文件\""
+    },
+    {
+      "key": "title:\"View\"",
+      "value": "title:\"视图\""
+    },
+    {
+      "key": "title:\"Window\"",
+      "value": "title:\"窗口\""
+    },
+    {
+      "key": "\"New Conversation\"",
+      "value": "\"新建对话\""
+    },
+    {
+      "key": "\"Scheduled Tasks\"",
+      "value": "\"计划任务\""
+    },
+    {
+      "key": "\"Conversation History\"",
+      "value": "\"历史对话\""
+    },
+    {
+      "key": "\"Projects\"",
+      "value": "\"项目\""
+    },
+    {
+      "key": "\"No conversations yet\"",
+      "value": "\"暂无历史对话\""
+    },
+    {
+      "key": "\"Settings\"",
+      "value": "\"设置\""
+    },
+    {
+      "key": "\"Ask anything, @ to mention\"",
+      "value": "\"问任何问题，输入 @ 提及\""
+    },
+    {
+      "key": "\", / for actions\"",
+      "value": "\"，输入 / 执行操作\""
+    },
+    {
+      "key": "aria-label:\"Message input\"",
+      "value": "aria-label:\"消息输入框\""
+    },
+    {
+      "key": "\"Project General\"",
+      "value": "\"项目常规\""
+    },
+    {
+      "key": "\"Project Folders\"",
+      "value": "\"项目文件夹\""
+    },
+    {
+      "key": "\"Project Agent\"",
+      "value": "\"项目智能体\""
+    },
+    {
+      "key": "\"Account\"",
+      "value": "\"账户\""
+    },
+    {
+      "key": "\"Google Drive\"",
+      "value": "\"谷歌云端硬盘\""
+    },
+    {
+      "key": "\"General\"",
+      "value": "\"通用\""
+    },
+    {
+      "key": "\"Appearance\"",
+      "value": "\"外观\""
+    },
+    {
+      "key": "\"Chat Settings\"",
+      "value": "\"对话设置\""
+    },
+    {
+      "key": "\"Verbose agent chat\"",
+      "value": "\"详细智能体对话\""
+    },
+    {
+      "key": "\"Display and preserve intermediate thinking steps\"",
+      "value": "\"显示并保留中间思考步骤\""
+    },
+    {
+      "key": "\"Select light, dark, or inherit system settings.\"",
+      "value": "\"选择浅色、深色或跟随系统设置。\""
+    },
+    {
+      "key": "\"Light Theme\"",
+      "value": "\"浅色主题\""
+    },
+    {
+      "key": "\"Dark Theme\"",
+      "value": "\"深色主题\""
+    },
+    {
+      "key": "\"Preset\"",
+      "value": "\"预设\""
+    },
+    {
+      "key": "\"Default Light\"",
+      "value": "\"默认浅色\""
+    },
+    {
+      "key": "\"Default Dark\"",
+      "value": "\"默认深色\""
+    },
+    {
+      "key": "\"Background\"",
+      "value": "\"背景\""
+    },
+    {
+      "key": "\"Foreground\"",
+      "value": "\"前景\""
+    },
+    {
+      "key": "\"Accent\"",
+      "value": "\"强调色\""
+    },
+    {
+      "key": "\"Customizations\"",
+      "value": "\"自定义\""
+    },
+    {
+      "key": "\"Notifications\"",
+      "value": "\"通知\""
+    },
+    {
+      "key": "\"Editor\"",
+      "value": "\"编辑器\""
+    },
+    {
+      "key": "\"Best of N\"",
+      "value": "\"Best of N\""
+    },
+    {
+      "key": "\"Browser Settings\"",
+      "value": "\"浏览器设置\""
+    },
+    {
+      "key": "\"App Settings\"",
+      "value": "\"应用设置\""
+    },
+    {
+      "key": "\"Manage application settings.\"",
+      "value": "\"管理应用设置。\""
+    },
+    {
+      "key": "\"Configure settings for Best of N mode.\"",
+      "value": "\"配置 Best of N 模式的相关设置。\""
+    },
+    {
+      "key": "\"Best of N Settings\"",
+      "value": "\"Best of N 设置\""
+    },
+    {
+      "key": "\"Shortcuts\"",
+      "value": "\"快捷键\""
+    },
+    {
+      "key": "\"Provide Feedback\"",
+      "value": "\"提供反馈\""
+    },
+    {
+      "key": "\"Notification Settings\"",
+      "value": "\"通知设置\""
+    },
+    {
+      "key": "\"Open System Preferences\"",
+      "value": "\"打开系统设置\""
+    },
+    {
+      "key": "\"Keyboard shortcuts for quick navigation and control.\"",
+      "value": "\"用于快速导航和控制的键盘快捷键。\""
+    },
+    {
+      "key": "\"RECOMMENDED\"",
+      "value": "\"推荐\""
+    },
+    {
+      "key": "\"Open Conversation Picker\"",
+      "value": "\"打开对话选择器\""
+    },
+    {
+      "key": "\"Open File Search\"",
+      "value": "\"打开文件搜索\""
+    },
+    {
+      "key": "\"Focus Input\"",
+      "value": "\"聚焦输入框\""
+    },
+    {
+      "key": "\"Go Back\"",
+      "value": "\"返回\""
+    },
+    {
+      "key": "\"Go Forward\"",
+      "value": "\"前进\""
+    },
+    {
+      "key": "\"File Picker\"",
+      "value": "\"文件选择器\""
+    },
+    {
+      "key": "\"Select Previous Conversation\"",
+      "value": "\"选择上一个对话\""
+    },
+    {
+      "key": "\"Select Next Conversation\"",
+      "value": "\"选择下一个对话\""
+    },
+    {
+      "key": "\"CONVERSATION\"",
+      "value": "\"对话\""
+    },
+    {
+      "key": "\"LAYOUT CONTROLS\"",
+      "value": "\"布局控制\""
+    },
+    {
+      "key": "\"Toggle Model Selector\"",
+      "value": "\"切换模型选择器\""
+    },
+    {
+      "key": "\"Toggle Voice Recording\"",
+      "value": "\"切换语音录制\""
+    },
+    {
+      "key": "\"Find in Pane\"",
+      "value": "\"在面板中查找\""
+    },
+    {
+      "key": "\"Toggle Sidebar\"",
+      "value": "\"切换侧边栏\""
+    },
+    {
+      "key": "\"Toggle Auxiliary Pane\"",
+      "value": "\"切换辅助面板\""
+    },
+    {
+      "key": "\"Enable Telemetry\"",
+      "value": "\"启用遥测\""
+    },
+    {
+      "key": "\"Marketing Emails\"",
+      "value": "\"营销邮件\""
+    },
+    {
+      "key": "\"Your Plan:\"",
+      "value": "\"当前套餐：\""
+    },
+    {
+      "key": "\"Upgrade\"",
+      "value": "\"升级\""
+    },
+    {
+      "key": "\"Sign Out\"",
+      "value": "\"退出登录\""
+    },
+    {
+      "key": "\"Email\"",
+      "value": "\"邮箱\""
+    },
+    {
+      "key": "\"Terms of Service\"",
+      "value": "\"服务条款\""
+    },
+    {
+      "key": "\"Conversations\"",
+      "value": "\"对话\""
+    },
+    {
+      "key": "\"Not in Project\"",
+      "value": "\"未归属项目\""
+    },
+    {
+      "key": "\"Workspaces\"",
+      "value": "\"工作区\""
+    },
+    {
+      "key": "\"Show all\"",
+      "value": "\"显示全部\""
+    },
+    {
+      "key": "\"Theme\"",
+      "value": "\"主题\""
+    },
+    {
+      "key": "\"Keyboard Shortcuts\"",
+      "value": "\"快捷键\""
+    },
+    {
+      "key": "\"No project selected or project management not available.\"",
+      "value": "\"未选择项目，或项目管理不可用。\""
+    },
+    {
+      "key": "\"Open Settings\"",
+      "value": "\"打开设置\""
+    },
+    {
+      "key": "\"Open Keyboard Shortcuts\"",
+      "value": "\"打开快捷键列表\""
+    },
+    {
+      "key": "\"No agents running\"",
+      "value": "\"当前没有运行中的智能体\""
+    },
+    {
+      "key": "\"Folders\"",
+      "value": "\"文件夹\""
+    },
+    {
+      "key": "\"Add Folder\"",
+      "value": "\"添加文件夹\""
+    },
+    {
+      "key": "\"Agent Settings\"",
+      "value": "\"智能体设置\""
+    },
+    {
+      "key": "\"Security Preset\"",
+      "value": "\"安全预设\""
+    },
+    {
+      "key": "\"Unrestricted\"",
+      "value": "\"无限制\""
+    },
+    {
+      "key": "\"Agent Behavior\"",
+      "value": "\"智能体行为\""
+    },
+    {
+      "key": "\"Artifact Review Policy\"",
+      "value": "\"产物评审策略\""
+    },
+    {
+      "key": "\"Local Permissions\"",
+      "value": "\"本地权限\""
+    },
+    {
+      "key": "\"File Access Rules\"",
+      "value": "\"文件访问规则\""
+    },
+    {
+      "key": "\"Network Access Rules\"",
+      "value": "\"网络访问规则\""
+    },
+    {
+      "key": "\"MCP Tools\"",
+      "value": "\"MCP 工具\""
+    },
+    {
+      "key": "\"Danger Zone\"",
+      "value": "\"危险区域\""
+    },
+    {
+      "key": "\"Delete Project\"",
+      "value": "\"删除项目\""
+    },
+    {
+      "key": "\"Learn more about Unrestricted\"",
+      "value": "\"了解更多关于\"无限制\"\""
+    },
+    {
+      "key": "\"Learn more about \"",
+      "value": "\"了解更多关于 \""
+    },
+    {
+      "key": "\"Rules\"",
+      "value": "\"规则\""
+    },
+    {
+      "key": "\"Show 1 breakdown\"",
+      "value": "\"显示 1 项明细\""
+    },
+    {
+      "key": "\"Terminal Commands\"",
+      "value": "\"终端命令\""
+    },
+    {
+      "key": "\"Commands Outside Sandbox\"",
+      "value": "\"沙箱外命令\""
+    },
+    {
+      "key": "\"Global\"",
+      "value": "\"全局\""
+    },
+    {
+      "key": "\"File Reads\"",
+      "value": "\"文件读取\""
+    },
+    {
+      "key": "\"File Writes\"",
+      "value": "\"文件写入\""
+    },
+    {
+      "key": "\"Read URLs\"",
+      "value": "\"读取 URL\""
+    },
+    {
+      "key": "\"Skills\"",
+      "value": "\"技能\""
+    },
+    {
+      "key": "\"Custom\"",
+      "value": "\"自定义\""
+    },
+    {
+      "key": "\"Hide breakdown\"",
+      "value": "\"隐藏明细\""
+    },
+    {
+      "key": "\"No customizations found for this workspace.\"",
+      "value": "\"当前工作区未找到任何自定义内容。\""
+    },
+    {
+      "key": "\"user_global\"",
+      "value": "\"用户全局\""
+    },
+    {
+      "key": "\"Suggestions\"",
+      "value": "\"建议\""
+    },
+    {
+      "key": "\"Navigation\"",
+      "value": "\"导航\""
+    },
+    {
+      "key": "\"Context\"",
+      "value": "\"上下文\""
+    },
+    {
+      "key": "\"Advanced\"",
+      "value": "\"高级\""
+    },
+    {
+      "key": "\"Quota\"",
+      "value": "\"配额\""
+    },
+    {
+      "key": "\"Default Customizations\"",
+      "value": "\"默认自定义\""
+    },
+    {
+      "key": "\"Customize Global Skills\"",
+      "value": "\"自定义全局技能\""
+    },
+    {
+      "key": "\"Custom Agents\"",
+      "value": "\"自定义智能体\""
+    },
+    {
+      "key": "\"MCP Servers\"",
+      "value": "\"MCP 服务器\""
+    },
+    {
+      "key": "\"Actuation Permissions\"",
+      "value": "\"执行权限\""
+    },
+    {
+      "key": "\"Browser Actuation Rules\"",
+      "value": "\"浏览器执行规则\""
+    },
+    {
+      "key": "\"Configure allowed and denied URLs for browser actuation.\"",
+      "value": "\"配置浏览器执行时允许和拒绝的 URL。\""
+    },
+    {
+      "key": "\"Edit\"",
+      "value": "\"编辑\""
+    },
+    {
+      "key": "\"Add\"",
+      "value": "\"添加\""
+    },
+    {
+      "key": "\"Delete command\"",
+      "value": "\"删除命令\""
+    },
+    {
+      "key": "\"Remove\"",
+      "value": "\"移除\""
+    },
+    {
+      "key": "\"Cancel\"",
+      "value": "\"取消\""
+    },
+    {
+      "key": "\"Allow List Terminal Commands\"",
+      "value": "\"允许列表终端命令\""
+    },
+    {
+      "key": "\"Deny List Terminal Commands\"",
+      "value": "\"拒绝列表终端命令\""
+    },
+    {
+      "key": "\"Agent Auto-Fix Lints\"",
+      "value": "\"智能体自动修复 Lint\""
+    },
+    {
+      "key": "\"Enable Workspace API\"",
+      "value": "\"启用 Workspace API\""
+    },
+    {
+      "key": "\"Confirm Window Reload\"",
+      "value": "\"确认窗口重载\""
+    },
+    {
+      "key": "\"Enable Demo Mode (Beta)\"",
+      "value": "\"启用演示模式（Beta）\""
+    },
+    {
+      "key": "\"Explain and Fix in Current Conversation\"",
+      "value": "\"在当前对话中解释并修复\""
+    },
+    {
+      "key": "\"Strict Mode\"",
+      "value": "\"严格模式\""
+    },
+    {
+      "key": "\"Agent Non-Workspace File Access\"",
+      "value": "\"智能体访问工作区外文件\""
+    },
+    {
+      "key": "\"Enable Terminal Sandbox\"",
+      "value": "\"启用终端沙箱\""
+    },
+    {
+      "key": "\"Sandbox Allow Network\"",
+      "value": "\"沙箱允许网络\""
+    },
+    {
+      "key": "\"Enable Shell Integration\"",
+      "value": "\"启用 Shell 集成\""
+    },
+    {
+      "key": "\"Terminal Command Auto Execution\"",
+      "value": "\"终端命令自动执行\""
+    },
+    {
+      "key": "\"Agent Host Address\"",
+      "value": "\"智能体主机地址\""
+    },
+    {
+      "key": "\"Review Policy\"",
+      "value": "\"评审策略\""
+    },
+    {
+      "key": "\"Enable Sounds for Agent\"",
+      "value": "\"为智能体启用提示音\""
+    },
+    {
+      "key": "\"Auto-Expand Changes Overview\"",
+      "value": "\"自动展开变更概览\""
+    },
+    {
+      "key": "\"Knowledge\"",
+      "value": "\"知识库\""
+    },
+    {
+      "key": "\"Auto-Open Edited Files\"",
+      "value": "\"自动打开已编辑文件\""
+    },
+    {
+      "key": "\"Open Agent on Reload\"",
+      "value": "\"重载时打开智能体\""
+    },
+    {
+      "key": "\"Suggestions in Editor\"",
+      "value": "\"编辑器内建议\""
+    },
+    {
+      "key": "\"Tab to Jump\"",
+      "value": "\"Tab 跳转\""
+    },
+    {
+      "key": "\"Tab to Import\"",
+      "value": "\"Tab 导入\""
+    },
+    {
+      "key": "\"Tab Speed\"",
+      "value": "\"Tab 速度\""
+    },
+    {
+      "key": "\"Highlight After Accept\"",
+      "value": "\"接受后高亮\""
+    },
+    {
+      "key": "\"Tab Gitignore Access\"",
+      "value": "\"Tab 访问 .gitignore\""
+    },
+    {
+      "key": "\"Browser Javascript Execution Policy\"",
+      "value": "\"浏览器 JavaScript 执行策略\""
+    },
+    {
+      "key": "\"Chrome Binary Path\"",
+      "value": "\"Chrome 可执行文件路径\""
+    },
+    {
+      "key": "\"Browser User Profile Path\"",
+      "value": "\"浏览器用户配置路径\""
+    },
+    {
+      "key": "\"Browser CDP Port\"",
+      "value": "\"浏览器 CDP 端口\""
+    },
+    {
+      "key": "\"Show Selection Actions\"",
+      "value": "\"显示选区操作\""
+    },
+    {
+      "key": "\"Include Jetski Default Customizations\"",
+      "value": "\"包含 Jetski 默认自定义\""
+    },
+    {
+      "key": "\"Prevent Sleep\"",
+      "value": "\"防止休眠\""
+    },
+    {
+      "key": "\"Keep In Menu Bar\"",
+      "value": "\"保持在菜单栏中\""
+    },
+    {
+      "key": "\"Enable Remote Control\"",
+      "value": "\"启用远程控制\""
+    },
+    {
+      "key": "\"Disabled\"",
+      "value": "\"禁用\""
+    },
+    {
+      "key": "\"Request Review\"",
+      "value": "\"请求评审\""
+    },
+    {
+      "key": "\"Always Proceed\"",
+      "value": "\"始终继续\""
+    },
+    {
+      "key": "\"Proceed in Sandbox\"",
+      "value": "\"在沙箱中继续\""
+    },
+    {
+      "key": "\"Fast\"",
+      "value": "\"快速\""
+    },
+    {
+      "key": "\"Slow\"",
+      "value": "\"慢速\""
+    },
+    {
+      "key": "\"Terminal\"",
+      "value": "\"终端\""
+    },
+    {
+      "key": "\"File Access\"",
+      "value": "\"文件访问\""
+    },
+    {
+      "key": "\"Automation\"",
+      "value": "\"自动化\""
+    },
+    {
+      "key": "\"History\"",
+      "value": "\"历史\""
+    },
+    {
+      "key": "\"Sandboxed\"",
+      "value": "\"沙箱模式\""
+    },
+    {
+      "key": "\"Strict\"",
+      "value": "\"严格模式\""
+    },
+    {
+      "key": "\"Enabled\"",
+      "value": "\"已启用\""
+    },
+    {
+      "key": "\"Value:\"",
+      "value": "\"值：\""
+    },
+    {
+      "key": "\"When enabled, Agent can interact with Google Workspace through the API to search and read documents.\"",
+      "value": "\"启用后，智能体可以通过 API 与 Google Workspace 交互，搜索并读取文档。\""
+    },
+    {
+      "key": "\"Toggle if a confirmation is shown when using the \"Reload Window\" button.\"",
+      "value": "\"控制使用\"重载窗口\"按钮时是否显示确认提示。\""
+    },
+    {
+      "key": "\"When enabled, \"Explain and Fix\" actions will continue in the current conversation instead of starting a new one.\"",
+      "value": "\"启用后，\"解释并修复\"操作会在当前对话中继续，而不是新建对话。\""
+    },
+    {
+      "key": "\"When enabled, terminal commands run with sandbox restrictions.\"",
+      "value": "\"启用后，终端命令将在沙箱限制下运行。\""
+    },
+    {
+      "key": "\"When enabled, sandboxed commands are allowed to make network requests.\"",
+      "value": "\"启用后，沙箱中的命令可以发起网络请求。\""
+    },
+    {
+      "key": "\"When enabled, Agent is given awareness of lint errors created by its edits and may fix them without explicit user prompting.\"",
+      "value": "\"启用后，智能体会感知自身编辑产生的 Lint 错误，并可在无需明确提示的情况下修复。\""
+    },
+    {
+      "key": "\"When enabled, the agent will be able to access past conversations to inform its responses.\"",
+      "value": "\"启用后，智能体可以访问历史对话来辅助生成回复。\""
+    },
+    {
+      "key": "\"Open files in the background if Agent creates or edits them\"",
+      "value": "\"当智能体创建或编辑文件时，在后台自动打开这些文件。\""
+    },
+    {
+      "key": "\"Manage your plan, credentials, and general preferences.\"",
+      "value": "\"管理你的套餐、凭据和通用偏好设置。\""
+    },
+    {
+      "key": "\"When toggled on, Antigravity collects usage data to help Google enhance performance and features.\"",
+      "value": "\"开启后，Antigravity 会收集使用数据，以帮助 Google 改进性能和功能。\""
+    },
+    {
+      "key": "\"Receive product updates, tips, and promotions from Google Antigravity via email.\"",
+      "value": "\"通过电子邮件接收来自 Google Antigravity 的产品更新、技巧和推广信息。\""
+    },
+    {
+      "key": "\"You can upgrade to a Google AI Ultra plan to receive the highest rate limits.\"",
+      "value": "\"你可以升级到 Google AI Ultra 套餐，以获得最高的速率限制。\""
+    },
+    {
+      "key": "\"By using this app, you agree to its\"",
+      "value": "\"使用此应用即表示你同意其\""
+    },
+    {
+      "key": "\"Open Agent panel on window reload\"",
+      "value": "\"窗口重载时打开智能体面板。\""
+    },
+    {
+      "key": "\"Allows the agent to access files outside of your current workspace.\"",
+      "value": "\"允许智能体访问当前工作区之外的文件。\""
+    },
+    {
+      "key": "\"Agent cannot modify files outside of the workspace in strict mode.\"",
+      "value": "\"在严格模式下，智能体无法修改工作区之外的文件。\""
+    },
+    {
+      "key": "\"Agent will always ask to review in strict mode.\"",
+      "value": "\"在严格模式下，智能体始终会请求评审。\""
+    },
+    {
+      "key": "\"Show suggestions when typing in the editor.\"",
+      "value": "\"在编辑器输入时显示建议。\""
+    },
+    {
+      "key": "\"Quickly add and update imports with a tab keypress.\"",
+      "value": "\"通过按下 Tab 键快速添加和更新导入。\""
+    },
+    {
+      "key": "\"Set the speed of tab suggestions\"",
+      "value": "\"设置 Tab 建议的显示速度。\""
+    },
+    {
+      "key": "\"Highlight newly inserted text after accepting a Tab completion.\"",
+      "value": "\"接受 Tab 补全后高亮新插入的文本。\""
+    },
+    {
+      "key": "\"Controls whether the agent can run custom JavaScript to automate complex browser actions.\"",
+      "value": "\"控制智能体是否可以运行自定义 JavaScript 来自动化复杂的浏览器操作。\""
+    },
+    {
+      "key": "\"Path to the Chrome/Chromium executable. Leave empty for auto-detection.\"",
+      "value": "\"Chrome/Chromium 可执行文件路径。留空则自动检测。\""
+    },
+    {
+      "key": "\"Custom path for the browser user profile directory. Leave empty for default (~/.gemini/antigravity-browser-profile).\"",
+      "value": "\"浏览器用户配置目录的自定义路径。留空则使用默认值（~/.gemini/antigravity-browser-profile）。\""
+    },
+    {
+      "key": "\"Port number for Chrome DevTools Protocol remote debugging. Leave empty for default (9222).\"",
+      "value": "\"Chrome DevTools Protocol 远程调试端口。留空则使用默认值（9222）。\""
+    },
+    {
+      "key": "\"Show \"Edit\" and \"Chat\" buttons when selecting text in the editor.\"",
+      "value": "\"在编辑器中选中文本时显示\"编辑\"和\"聊天\"按钮。\""
+    },
+    {
+      "key": "\"When enabled, the agent will include default customizations, including default skills.\"",
+      "value": "\"启用后，智能体会包含默认自定义内容，包括默认技能。\""
+    },
+    {
+      "key": "\"Prevent the computer from sleeping while the app is running.\"",
+      "value": "\"在应用运行期间阻止计算机进入睡眠。\""
+    },
+    {
+      "key": "\"The app will be accessible from the menu bar and will keep running in the background when all windows are closed.\"",
+      "value": "\"应用可从菜单栏访问，并会在所有窗口关闭后继续在后台运行。\""
+    },
+    {
+      "key": "\"If enabled, you can manage your conversations from the Antigravity website. Please reload the application to apply this setting.\"",
+      "value": "\"启用后，你可以在 Antigravity 网站上管理对话。请重新加载应用以使设置生效。\""
+    },
+    {
+      "key": "\"Configure the browser subagent. It requires\"",
+      "value": "\"配置浏览器子智能体。它需要\""
+    },
+    {
+      "key": "\"to be installed. The browser subagent can be invoked by typing /browser in the conversation input box.\"",
+      "value": "\"已安装。可在对话输入框中输入 /browser 来调用浏览器子智能体。\""
+    },
+    {
+      "key": "\"No permissions configured.\"",
+      "value": "\"尚未配置任何权限。\""
+    },
+    {
+      "key": "\"Controls whether terminal commands require your approval before running.\"",
+      "value": "\"控制终端命令在执行前是否需要你的批准。\""
+    },
+    {
+      "key": "\"Restricts agent tools to a secure, isolated local sandbox.\"",
+      "value": "\"将智能体工具限制在安全、隔离的本地沙箱中。\""
+    },
+    {
+      "key": "\"Agents run in a secure sandbox that restricts access to external resources outside of your trusted folders.\"",
+      "value": "\"智能体会在安全沙箱中运行，限制其访问受信任文件夹之外的外部资源。\""
+    },
+    {
+      "key": "\"Terminal commands always require review and the agent cannot access files outside of its given workspaces.\"",
+      "value": "\"终端命令始终需要评审，且智能体无法访问其指定工作区之外的文件。\""
+    },
+    {
+      "key": "\"Execute URLs\"",
+      "value": "\"执行 URL\""
+    },
+    {
+      "key": "\"Allow/deny agent browser actuation access to specific URLs.\"",
+      "value": "\"允许或拒绝智能体对特定 URL 执行浏览器操作。\""
+    },
+    {
+      "key": "\"Allow/deny agent read access to specific files or directories.\"",
+      "value": "\"允许或拒绝智能体读取特定文件或目录。\""
+    },
+    {
+      "key": "\"Allow/deny agent write access to specific files or directories.\"",
+      "value": "\"允许或拒绝智能体写入特定文件或目录。\""
+    },
+    {
+      "key": "\"Allow/deny agent read access to specific URLs or domains.\"",
+      "value": "\"允许或拒绝智能体读取特定 URL 或域名。\""
+    },
+    {
+      "key": "\"Allow/deny specific terminal commands.\"",
+      "value": "\"允许或拒绝特定终端命令。\""
+    },
+    {
+      "key": "\"Allow/deny agent command execution outside the sandbox.\"",
+      "value": "\"允许或拒绝智能体在沙箱外执行命令。\""
+    },
+    {
+      "key": "\"External tools the agent can call via Model Context Protocol.\"",
+      "value": "\"智能体可通过 Model Context Protocol 调用的外部工具。\""
+    },
+    {
+      "key": "\"e.g., /path/to/file\"",
+      "value": "\"例如：/path/to/file\""
+    },
+    {
+      "key": "\"e.g., https://example.com\"",
+      "value": "\"例如：https://example.com\""
+    },
+    {
+      "key": "\"e.g., npm test\"",
+      "value": "\"例如：npm test\""
+    },
+    {
+      "key": "\"e.g., curl\"",
+      "value": "\"例如：curl\""
+    },
+    {
+      "key": "\"Enter tool name or server...\"",
+      "value": "\"输入工具名称或服务器...\""
+    },
+    {
+      "key": "\"Inherits from\"",
+      "value": "\"继承自\""
+    },
+    {
+      "key": "\"global settings\"",
+      "value": "\"全局设置\""
+    },
+    {
+      "key": "\". Local permissions have higher priority.\"",
+      "value": "\"。本地权限具有更高优先级。\""
+    },
+    {
+      "key": "\"Learn more about\"",
+      "value": "\"了解更多关于\""
+    },
+    {
+      "key": "\"Manage project folders, agent settings, and permissions.\"",
+      "value": "\"管理项目文件夹、智能体设置和权限。\""
+    },
+    {
+      "key": "\"Choose a predefined security preset for the agent. This controls terminal auto-execution policy, and file access policy.\"",
+      "value": "\"为智能体选择预定义的安全预设。它会控制终端自动执行策略和文件访问策略。\""
+    },
+    {
+      "key": "\"Inherits from global settings. Local permissions have higher priority. Learn more.\"",
+      "value": "\"继承全局设置。本地权限具有更高优先级。了解更多。\""
+    },
+    {
+      "key": "\"Inherits from global settings. Local permissions have higher priority. \"",
+      "value": "\"继承全局设置。本地权限具有更高优先级。\""
+    },
+    {
+      "key": "\"Learn more.\"",
+      "value": "\"了解更多。\""
+    },
+    {
+      "key": "\"Configure allowed and denied paths for file reads and writes.\"",
+      "value": "\"配置文件读写时允许和拒绝的路径。\""
+    },
+    {
+      "key": "\"Configure allowed and denied URLs for reading.\"",
+      "value": "\"配置读取时允许和拒绝的 URL。\""
+    },
+    {
+      "key": "\"Configure allowed terminal commands.\"",
+      "value": "\"配置允许的终端命令。\""
+    },
+    {
+      "key": "\"Configure allowed commands outside the sandbox.\"",
+      "value": "\"配置沙箱外允许执行的命令。\""
+    },
+    {
+      "key": "\"Configure external tools via Model Context Protocol.\"",
+      "value": "\"通过 Model Context Protocol 配置外部工具。\""
+    },
+    {
+      "key": "\"The breakdown below shows token usage from customizations like skills, rules, and MCP. If the budget is exceeded, large customizations will be truncated automatically.\"",
+      "value": "\"下方明细显示技能、规则、MCP 等自定义内容的 token 使用情况。如果超出预算，较大的自定义内容会被自动截断。\""
+    },
+    {
+      "key": "\"of the customization budget is available.\"",
+      "value": "\"的自定义预算仍可用。\""
+    },
+    {
+      "key": "\"The customization budget is available.\"",
+      "value": "\"自定义预算仍可用。\""
+    },
+    {
+      "key": "\"Permanently delete this project and all of its conversations.\"",
+      "value": "\"永久删除该项目及其所有对话。\""
+    },
+    {
+      "key": "\"Getting started with a Project\"",
+      "value": "\"项目入门指南\""
+    },
+    {
+      "key": "\"Learn more\"",
+      "value": "\"了解更多\""
+    },
+    {
+      "key": "\"Learn More\"",
+      "value": "\"了解更多\""
+    },
+    {
+      "key": "\"Submit\"",
+      "value": "\"提交\""
+    },
+    {
+      "key": "\"Continue\"",
+      "value": "\"继续\""
+    },
+    {
+      "key": "\"Quit\"",
+      "value": "\"退出\""
+    },
+    {
+      "key": "\"Approve\"",
+      "value": "\"批准\""
+    },
+    {
+      "key": "\"Reject\"",
+      "value": "\"拒绝\""
+    },
+    {
+      "key": "\"Allow\"",
+      "value": "\"允许\""
+    },
+    {
+      "key": "\"Deny\"",
+      "value": "\"拒绝\""
+    },
+    {
+      "key": "\"Completed\"",
+      "value": "\"已完成\""
+    },
+    {
+      "key": "\"Task\"",
+      "value": "\"任务\""
+    },
+    {
+      "key": "\"running\"",
+      "value": "\"运行中\""
+    },
+    {
+      "key": "\"Running\"",
+      "value": "\"运行中\""
+    },
+    {
+      "key": "\"completed\"",
+      "value": "\"已完成\""
+    },
+    {
+      "key": "\"Approved\"",
+      "value": "\"已批准\""
+    },
+    {
+      "key": "\"Requested change\"",
+      "value": "\"请求变更\""
+    },
+    {
+      "key": "\"Denied\"",
+      "value": "\"已拒绝\""
+    },
+    {
+      "key": "\"Action Required\"",
+      "value": "\"需要操作\""
+    },
+    {
+      "key": "\"Completed Operations\"",
+      "value": "\"已完成操作\""
+    },
+    {
+      "key": "\"Walkthrough\"",
+      "value": "\"任务演练\""
+    },
+    {
+      "key": "\"Review\"",
+      "value": "\"评审\""
+    },
+    {
+      "key": "\"Wait\"",
+      "value": "\"等待\""
+    },
+    {
+      "key": "Learn more about ",
+      "value": "了解更多关于 "
+    },
+    {
+      "key": "Inherits from global settings. Local permissions have higher priority. ",
+      "value": "继承全局设置。本地权限具有更高优先级。"
+    },
+    {
+      "key": "of the customization budget is available.",
+      "value": "的自定义预算仍可用。"
+    },
+    {
+      "key": "Rules\\\\n(1.6%)",
+      "value": "规则\\\\n(1.6%)"
+    },
+    {
+      "key": "Show 1 breakdown",
+      "value": "显示 1 项明细"
+    },
+    {
+      "key": "Learn more about Unrestricted",
+      "value": "了解更多关于无限制"
+    },
+    {
+      "key": "Learn more about 无限制",
+      "value": "了解更多关于无限制"
+    },
+    {
+      "key": "Learn more about 无限制\"",
+      "value": "了解更多关于无限制\""
+    },
+    {
+      "key": "Inherits from global settings. Local permissions have higher priority. 了解更多.",
+      "value": "继承全局设置。本地权限具有更高优先级。了解更多。"
+    },
+    {
+      "key": "\"Check for Updates\"",
+      "value": "\"检查更新\""
+    },
+    {
+      "key": "\"Command Center\"",
+      "value": "\"命令中心\""
+    },
+    {
+      "key": "\"Auxiliary Pane\"",
+      "value": "\"辅助面板\""
+    },
+    {
+      "key": "\"Close Auxiliary Pane\"",
+      "value": "\"关闭辅助面板\""
+    },
+    {
+      "key": "\"Toggle Auxiliary Pane\"",
+      "value": "\"切换辅助面板\""
+    },
+    {
+      "key": "\"Toggle Sidebar\"",
+      "value": "\"切换侧边栏\""
+    },
+    {
+      "key": "\"Minimize\"",
+      "value": "\"最小化\""
+    },
+    {
+      "key": "\"Maximize\"",
+      "value": "\"最大化\""
+    },
+    {
+      "key": "\"Zoom In\"",
+      "value": "\"放大\""
+    },
+    {
+      "key": "\"Zoom Out\"",
+      "value": "\"缩小\""
+    },
+    {
+      "key": "\"Reset Zoom\"",
+      "value": "\"重置缩放\""
+    },
+    {
+      "key": "\"Toggle Fullscreen\"",
+      "value": "\"全屏\""
+    },
+    {
+      "key": "\"Toggle Developer Tools\"",
+      "value": "\"开发者工具\""
+    },
+    {
+      "key": "\"Confirm Window Reload\"",
+      "value": "\"确认窗口重载\""
+    },
+    {
+      "key": "\"Collapse All\"",
+      "value": "\"全部折叠\""
+    },
+    {
+      "key": "\"Close Tab\"",
+      "value": "\"关闭标签页\""
+    },
+    {
+      "key": "\"Close Terminal Tab\"",
+      "value": "\"关闭终端标签页\""
+    },
+    {
+      "key": "\"Open File\"",
+      "value": "\"打开文件\""
+    },
+    {
+      "key": "\"Open Folder\"",
+      "value": "\"打开文件夹\""
+    },
+    {
+      "key": "\"Close Folder\"",
+      "value": "\"关闭文件夹\""
+    },
+    {
+      "key": "\"Close Workspace\"",
+      "value": "\"关闭工作区\""
+    },
+    {
+      "key": "\"All Files\"",
+      "value": "\"所有文件\""
+    },
+    {
+      "key": "\"All Workspaces\"",
+      "value": "\"所有工作区\""
+    },
+    {
+      "key": "\"Configure Branches\"",
+      "value": "\"配置分支\""
+    },
+    {
+      "key": "\"Add Folder\"",
+      "value": "\"添加文件夹\""
+    },
+    {
+      "key": "\"Add recent remote workspace\"",
+      "value": "\"添加最近远程工作区\""
+    },
+    {
+      "key": "\"Clone current workspace into a new independent workspace\"",
+      "value": "\"将当前工作区克隆为新的独立工作区\""
+    },
+    {
+      "key": "\"Project General\"",
+      "value": "\"项目常规\""
+    },
+    {
+      "key": "\"Project Folders\"",
+      "value": "\"项目文件夹\""
+    },
+    {
+      "key": "\"Project Agent\"",
+      "value": "\"项目智能体\""
+    },
+    {
+      "key": "\"Delete Project\"",
+      "value": "\"删除项目\""
+    },
+    {
+      "key": "\"Archive Conversation\"",
+      "value": "\"归档对话\""
+    },
+    {
+      "key": "\"Archive this conversation\"",
+      "value": "\"归档此对话\""
+    },
+    {
+      "key": "\"Create Project\"",
+      "value": "\"创建项目\""
+    },
+    {
+      "key": "\"New Conversation\"",
+      "value": "\"新建对话\""
+    },
+    {
+      "key": "\"Configure workspace-specific permissions, resources, and customizations.\"",
+      "value": "\"配置工作区特定的权限、资源和自定义内容。\""
+    },
+    {
+      "key": "\"Agent Settings\"",
+      "value": "\"智能体设置\""
+    },
+    {
+      "key": "\"Agent Behavior\"",
+      "value": "\"智能体行为\""
+    },
+    {
+      "key": "\"Agent Hooks Configuration\"",
+      "value": "\"智能体钩子配置\""
+    },
+    {
+      "key": "\"Agent Script\"",
+      "value": "\"智能体脚本\""
+    },
+    {
+      "key": "\"Agent Script Command Configuration\"",
+      "value": "\"智能体脚本命令配置\""
+    },
+    {
+      "key": "\"Agent State Debug\"",
+      "value": "\"智能体状态调试\""
+    },
+    {
+      "key": "\"Agent Stopped\"",
+      "value": "\"智能体已停止\""
+    },
+    {
+      "key": "\"Agent Loading\"",
+      "value": "\"智能体加载中\""
+    },
+    {
+      "key": "\"Agent terminated due to error\"",
+      "value": "\"智能体因错误终止\""
+    },
+    {
+      "key": "\"This error is likely temporary. You can prompt the model to try again after some time.\"",
+      "value": "\"此错误可能是暂时的。你可以稍后提示模型重试。\""
+    },
+    {
+      "key": "\"Agent Non-Workspace File Access\"",
+      "value": "\"智能体访问工作区外文件\""
+    },
+    {
+      "key": "\"Agent Auto-Fix Lints\"",
+      "value": "\"智能体自动修复 Lint\""
+    },
+    {
+      "key": "\"Agent Host Address\"",
+      "value": "\"智能体主机地址\""
+    },
+    {
+      "key": "\"Ask Agent for Help\"",
+      "value": "\"向智能体求助\""
+    },
+    {
+      "key": "\"Ask a quick question without interrupting the main conversation.\"",
+      "value": "\"在不中断主对话的情况下快速提问。\""
+    },
+    {
+      "key": "\"Always Ask\"",
+      "value": "\"始终询问\""
+    },
+    {
+      "key": "\"Always Allow\"",
+      "value": "\"始终允许\""
+    },
+    {
+      "key": "\"Always Proceed\"",
+      "value": "\"始终继续\""
+    },
+    {
+      "key": "\"Always run\"",
+      "value": "\"始终运行\""
+    },
+    {
+      "key": "\"Ask every time\"",
+      "value": "\"每次都询问\""
+    },
+    {
+      "key": "\"Allow Once\"",
+      "value": "\"允许一次\""
+    },
+    {
+      "key": "\"Allow once\"",
+      "value": "\"允许一次\""
+    },
+    {
+      "key": "\"Allow in Conversation\"",
+      "value": "\"在对话中允许\""
+    },
+    {
+      "key": "\"Add Comment\"",
+      "value": "\"添加评论\""
+    },
+    {
+      "key": "\"Add Context\"",
+      "value": "\"添加上下文\""
+    },
+    {
+      "key": "\"Add context\"",
+      "value": "\"添加上下文\""
+    },
+    {
+      "key": "\"Add all\"",
+      "value": "\"添加全部\""
+    },
+    {
+      "key": "\"Add to allowlist\"",
+      "value": "\"加入允许列表\""
+    },
+    {
+      "key": "\"Added to allowlist\"",
+      "value": "\"已加入允许列表\""
+    },
+    {
+      "key": "\"Blocked on Your Input\"",
+      "value": "\"等待你的输入\""
+    },
+    {
+      "key": "\"Action Required\"",
+      "value": "\"需要操作\""
+    },
+    {
+      "key": "\"agent requires permission to continue.\"",
+      "value": "\"智能体需要你的许可才能继续。\""
+    },
+    {
+      "key": "\"Chat Settings\"",
+      "value": "\"对话设置\""
+    },
+    {
+      "key": "\"Chat Model Metadata\"",
+      "value": "\"对话模型元数据\""
+    },
+    {
+      "key": "\"Verbose agent chat\"",
+      "value": "\"详细智能体对话\""
+    },
+    {
+      "key": "\"Background Task\"",
+      "value": "\"后台任务\""
+    },
+    {
+      "key": "\"Background Tasks\"",
+      "value": "\"后台任务\""
+    },
+    {
+      "key": "\"Background Task Output\"",
+      "value": "\"后台任务输出\""
+    },
+    {
+      "key": "\"Cancel All Tasks\"",
+      "value": "\"取消所有任务\""
+    },
+    {
+      "key": "\"Cancel Task\"",
+      "value": "\"取消任务\""
+    },
+    {
+      "key": "\"Cancel\"",
+      "value": "\"取消\""
+    },
+    {
+      "key": "\"Accept Step\"",
+      "value": "\"接受步骤\""
+    },
+    {
+      "key": "\"Complete verification\"",
+      "value": "\"完成验证\""
+    },
+    {
+      "key": "\"Confirm Undo\"",
+      "value": "\"确认撤销\""
+    },
+    {
+      "key": "\"Confirm Browser Interaction\"",
+      "value": "\"确认浏览器交互\""
+    },
+    {
+      "key": "\"Agent response\"",
+      "value": "\"智能体回复\""
+    },
+    {
+      "key": "\"Analyzed Task Log\"",
+      "value": "\"已分析任务日志\""
+    },
+    {
+      "key": "\"Analyzing Task Log\"",
+      "value": "\"正在分析任务日志\""
+    },
+    {
+      "key": "\"Analyzed content\"",
+      "value": "\"已分析内容\""
+    },
+    {
+      "key": "\"Analyzing content\"",
+      "value": "\"正在分析内容\""
+    },
+    {
+      "key": "\"Cleared Count\"",
+      "value": "\"清除计数\""
+    },
+    {
+      "key": "\"Add Model\"",
+      "value": "\"添加模型\""
+    },
+    {
+      "key": "\"Add Custom Model\"",
+      "value": "\"添加自定义模型\""
+    },
+    {
+      "key": "\"Chat Model Metadata\"",
+      "value": "\"对话模型元数据\""
+    },
+    {
+      "key": "\"Configure AI models and view your quota.\"",
+      "value": "\"配置 AI 模型并查看你的配额。\""
+    },
+    {
+      "key": "\"Quota\"",
+      "value": "\"配额\""
+    },
+    {
+      "key": "\"Baseline model quota reached\"",
+      "value": "\"基础模型配额已用尽\""
+    },
+    {
+      "key": "\"Your Plan:\"",
+      "value": "\"你的套餐：\""
+    },
+    {
+      "key": "\"Upgrade\"",
+      "value": "\"升级\""
+    },
+    {
+      "key": "\"Add all\"",
+      "value": "\"添加全部\""
+    },
+    {
+      "key": "\"Security Preset\"",
+      "value": "\"安全预设\""
+    },
+    {
+      "key": "\"Agent security mode\"",
+      "value": "\"智能体安全模式\""
+    },
+    {
+      "key": "\"Agent always asks for review.\"",
+      "value": "\"智能体始终请求评审。\""
+    },
+    {
+      "key": "\"Agent auto-executes commands matched by an allow list entry.\"",
+      "value": "\"智能体自动执行允许列表中的命令。\""
+    },
+    {
+      "key": "\"Agent never asks for review. This maximizes the autonomy of the Agent, but also has the highest risk of the Agent operating over unsafe or injected Artifact content.\"",
+      "value": "\"智能体从不请求评审。这会最大化智能体的自主性，但也具有最高的安全风险。\""
+    },
+    {
+      "key": "\"Allow List Terminal Commands\"",
+      "value": "\"允许列表终端命令\""
+    },
+    {
+      "key": "\"Deny List Terminal Commands\"",
+      "value": "\"拒绝列表终端命令\""
+    },
+    {
+      "key": "\"Allow/deny agent browser actuation access to specific URLs.\"",
+      "value": "\"允许或拒绝智能体浏览器操作访问特定 URL。\""
+    },
+    {
+      "key": "\"Allow/deny agent read access to specific files or directories.\"",
+      "value": "\"允许或拒绝智能体读取特定文件或目录。\""
+    },
+    {
+      "key": "\"Allow/deny agent write access to specific files or directories.\"",
+      "value": "\"允许或拒绝智能体写入特定文件或目录。\""
+    },
+    {
+      "key": "\"Allow/deny agent read access to specific URLs or domains.\"",
+      "value": "\"允许或拒绝智能体读取特定 URL 或域名。\""
+    },
+    {
+      "key": "\"Allow/deny specific terminal commands.\"",
+      "value": "\"允许或拒绝特定终端命令。\""
+    },
+    {
+      "key": "\"Allow/deny agent command execution outside the sandbox.\"",
+      "value": "\"允许或拒绝沙箱外命令执行。\""
+    },
+    {
+      "key": "\"Advanced File Access\"",
+      "value": "\"高级文件访问\""
+    },
+    {
+      "key": "\"Advanced Command Access\"",
+      "value": "\"高级命令访问\""
+    },
+    {
+      "key": "\"Advanced Web Access\"",
+      "value": "\"高级网络访问\""
+    },
+    {
+      "key": "\"Advanced Settings\"",
+      "value": "\"高级设置\""
+    },
+    {
+      "key": "\"Commands Outside Sandbox\"",
+      "value": "\"沙箱外命令\""
+    },
+    {
+      "key": "\"Commands the agent can run outside the sandbox in this workspace.\"",
+      "value": "\"智能体可在此工作区沙箱外运行的命令。\""
+    },
+    {
+      "key": "\"Configure allowed and denied URLs for reading.\"",
+      "value": "\"配置读取时允许和拒绝的 URL。\""
+    },
+    {
+      "key": "\"Configure allowed and denied paths for file reads and writes.\"",
+      "value": "\"配置读写时允许和拒绝的路径。\""
+    },
+    {
+      "key": "\"Configure allowed commands outside the sandbox.\"",
+      "value": "\"配置沙箱外允许的命令。\""
+    },
+    {
+      "key": "\"Configure allowed terminal commands.\"",
+      "value": "\"配置允许的终端命令。\""
+    },
+    {
+      "key": "\"Configure external tools via Model Context Protocol.\"",
+      "value": "\"通过 Model Context Protocol 配置外部工具。\""
+    },
+    {
+      "key": "\"Browser Settings\"",
+      "value": "\"浏览器设置\""
+    },
+    {
+      "key": "\"Browser Task\"",
+      "value": "\"浏览器任务\""
+    },
+    {
+      "key": "\"Browser Subagent Viewer\"",
+      "value": "\"浏览器子智能体查看器\""
+    },
+    {
+      "key": "\"Browser Actuation Permissions\"",
+      "value": "\"浏览器执行权限\""
+    },
+    {
+      "key": "\"Browser Actuation Rules\"",
+      "value": "\"浏览器执行规则\""
+    },
+    {
+      "key": "\"Browser Javascript Execution Policy\"",
+      "value": "\"浏览器 JavaScript 执行策略\""
+    },
+    {
+      "key": "\"Browser CDP Port\"",
+      "value": "\"浏览器 CDP 端口\""
+    },
+    {
+      "key": "\"Browser User Profile Path\"",
+      "value": "\"浏览器用户配置路径\""
+    },
+    {
+      "key": "\"Chrome Binary Path\"",
+      "value": "\"Chrome 可执行文件路径\""
+    },
+    {
+      "key": "\"Configure the browser subagent. It requires\"",
+      "value": "\"配置浏览器子智能体。它需要\""
+    },
+    {
+      "key": "\"to be installed. The browser subagent can be invoked by typing /browser in the conversation input box.\"",
+      "value": "\"已安装。可在对话输入框中输入 /browser 来调用浏览器子智能体。\""
+    },
+    {
+      "key": "\"Port number for Chrome DevTools Protocol remote debugging. Leave empty for default (9222).\"",
+      "value": "\"Chrome DevTools Protocol 远程调试端口。留空则使用默认值（9222）。\""
+    },
+    {
+      "key": "\"Custom path for the browser user profile directory. Leave empty for default (~/.gemini/antigravity-browser-profile).\"",
+      "value": "\"浏览器用户配置目录的自定义路径。留空则使用默认值。\""
+    },
+    {
+      "key": "\"Path to the Chrome/Chromium executable. Leave empty for auto-detection.\"",
+      "value": "\"Chrome/Chromium 可执行文件路径。留空则自动检测。\""
+    },
+    {
+      "key": "\"Controls whether the agent can run custom JavaScript to automate complex browser actions.\"",
+      "value": "\"控制智能体是否可运行自定义 JavaScript 以自动化复杂浏览器操作。\""
+    },
+    {
+      "key": "\"Allow remote debugging for this browser instance\"",
+      "value": "\"允许对此浏览器实例进行远程调试\""
+    },
+    {
+      "key": "\"Active Browser page\"",
+      "value": "\"活跃浏览器页面\""
+    },
+    {
+      "key": "\"Active Browser pages\"",
+      "value": "\"活跃浏览器页面\""
+    },
+    {
+      "key": "\"Capture console logs\"",
+      "value": "\"捕获控制台日志\""
+    },
+    {
+      "key": "\"Capture screenshot\"",
+      "value": "\"捕获截图\""
+    },
+    {
+      "key": "\"Appearance\"",
+      "value": "\"外观\""
+    },
+    {
+      "key": "\"Theme\"",
+      "value": "\"主题\""
+    },
+    {
+      "key": "\"Light Theme\"",
+      "value": "\"浅色主题\""
+    },
+    {
+      "key": "\"Dark Theme\"",
+      "value": "\"深色主题\""
+    },
+    {
+      "key": "\"Preset\"",
+      "value": "\"预设\""
+    },
+    {
+      "key": "\"Default Light\"",
+      "value": "\"默认浅色\""
+    },
+    {
+      "key": "\"Default Dark\"",
+      "value": "\"默认深色\""
+    },
+    {
+      "key": "\"Atom One Dark\"",
+      "value": "\"Atom One Dark\""
+    },
+    {
+      "key": "\"Atom One Light\"",
+      "value": "\"Atom One Light\""
+    },
+    {
+      "key": "\"Background\"",
+      "value": "\"背景\""
+    },
+    {
+      "key": "\"Foreground\"",
+      "value": "\"前景\""
+    },
+    {
+      "key": "\"Accent\"",
+      "value": "\"强调色\""
+    },
+    {
+      "key": "\"Active background color of the command center\"",
+      "value": "\"命令中心活动背景色\""
+    },
+    {
+      "key": "\"Active border color of the command center\"",
+      "value": "\"命令中心活动边框色\""
+    },
+    {
+      "key": "\"Active foreground color of the command center\"",
+      "value": "\"命令中心活动前景色\""
+    },
+    {
+      "key": "\"Editor\"",
+      "value": "\"编辑器\""
+    },
+    {
+      "key": "\"Code Search\"",
+      "value": "\"代码搜索\""
+    },
+    {
+      "key": "\"Code Context Items\"",
+      "value": "\"代码上下文项\""
+    },
+    {
+      "key": "\"Show Selection Actions\"",
+      "value": "\"显示选区操作\""
+    },
+    {
+      "key": "\"Suggestions in Editor\"",
+      "value": "\"编辑器内建议\""
+    },
+    {
+      "key": "\"Tab to Jump\"",
+      "value": "\"Tab 跳转\""
+    },
+    {
+      "key": "\"Tab to Import\"",
+      "value": "\"Tab 导入\""
+    },
+    {
+      "key": "\"Tab Speed\"",
+      "value": "\"Tab 速度\""
+    },
+    {
+      "key": "\"Highlight After Accept\"",
+      "value": "\"接受后高亮\""
+    },
+    {
+      "key": "\"Tab Gitignore Access\"",
+      "value": "\"Tab 访问 .gitignore\""
+    },
+    {
+      "key": "\"Suggestions\"",
+      "value": "\"建议\""
+    },
+    {
+      "key": "\"Shortcuts\"",
+      "value": "\"快捷键\""
+    },
+    {
+      "key": "\"Keyboard Shortcuts\"",
+      "value": "\"键盘快捷键\""
+    },
+    {
+      "key": "\"Open Keyboard Shortcuts\"",
+      "value": "\"打开快捷键\""
+    },
+    {
+      "key": "\"Open Conversation Picker\"",
+      "value": "\"打开对话选择器\""
+    },
+    {
+      "key": "\"Open File Search\"",
+      "value": "\"打开文件搜索\""
+    },
+    {
+      "key": "\"Focus Input\"",
+      "value": "\"聚焦输入框\""
+    },
+    {
+      "key": "\"Go Back\"",
+      "value": "\"返回\""
+    },
+    {
+      "key": "\"Go Forward\"",
+      "value": "\"前进\""
+    },
+    {
+      "key": "\"File Picker\"",
+      "value": "\"文件选择器\""
+    },
+    {
+      "key": "\"Select Previous Conversation\"",
+      "value": "\"上一个对话\""
+    },
+    {
+      "key": "\"Select Next Conversation\"",
+      "value": "\"下一个对话\""
+    },
+    {
+      "key": "\"Toggle Model Selector\"",
+      "value": "\"切换模型选择器\""
+    },
+    {
+      "key": "\"Toggle Voice Recording\"",
+      "value": "\"切换语音录制\""
+    },
+    {
+      "key": "\"Find in Pane\"",
+      "value": "\"在面板中查找\""
+    },
+    {
+      "key": "\"Account\"",
+      "value": "\"账户\""
+    },
+    {
+      "key": "\"App Settings\"",
+      "value": "\"应用设置\""
+    },
+    {
+      "key": "\"General\"",
+      "value": "\"通用\""
+    },
+    {
+      "key": "\"Google Drive\"",
+      "value": "\"谷歌云端硬盘\""
+    },
+    {
+      "key": "\"Sign Out\"",
+      "value": "\"退出登录\""
+    },
+    {
+      "key": "\"Email\"",
+      "value": "\"邮箱\""
+    },
+    {
+      "key": "\"Terms of Service\"",
+      "value": "\"服务条款\""
+    },
+    {
+      "key": "\"Manage your plan, credentials, and general preferences.\"",
+      "value": "\"管理你的套餐、凭据和通用偏好设置。\""
+    },
+    {
+      "key": "\"Manage application settings.\"",
+      "value": "\"管理应用设置。\""
+    },
+    {
+      "key": "\"Prevent Sleep\"",
+      "value": "\"防止休眠\""
+    },
+    {
+      "key": "\"Keep In Menu Bar\"",
+      "value": "\"保留在菜单栏\""
+    },
+    {
+      "key": "\"Enable Remote Control\"",
+      "value": "\"启用远程控制\""
+    },
+    {
+      "key": "\"Enable Telemetry\"",
+      "value": "\"启用遥测\""
+    },
+    {
+      "key": "\"Marketing Emails\"",
+      "value": "\"营销邮件\""
+    },
+    {
+      "key": "\"When toggled on, Antigravity collects usage data to help Google enhance performance and features.\"",
+      "value": "\"开启后，Antigravity 会收集使用数据以帮助 Google 改进产品。\""
+    },
+    {
+      "key": "\"Receive product updates, tips, and promotions from Google Antigravity via email.\"",
+      "value": "\"通过邮件接收 Antigravity 产品更新、技巧和推广信息。\""
+    },
+    {
+      "key": "\"MCP Tools\"",
+      "value": "\"MCP 工具\""
+    },
+    {
+      "key": "\"MCP Servers\"",
+      "value": "\"MCP 服务器\""
+    },
+    {
+      "key": "\"Add MCP\"",
+      "value": "\"添加 MCP\""
+    },
+    {
+      "key": "\"Add MCP Servers\"",
+      "value": "\"添加 MCP 服务器\""
+    },
+    {
+      "key": "\"Add Handler\"",
+      "value": "\"添加处理器\""
+    },
+    {
+      "key": "\"Add Hook Card\"",
+      "value": "\"添加钩子卡片\""
+    },
+    {
+      "key": "\"External tools the agent can call via Model Context Protocol.\"",
+      "value": "\"智能体可通过 MCP 调用的外部工具。\""
+    },
+    {
+      "key": "\"All tools (*)\"",
+      "value": "\"所有工具 (*)\""
+    },
+    {
+      "key": "\"Build With Google Plugins\"",
+      "value": "\"通过 Google 插件构建\""
+    },
+    {
+      "key": "\"Artifact Comments\"",
+      "value": "\"产物评论\""
+    },
+    {
+      "key": "\"Artifact Name\"",
+      "value": "\"产物名称\""
+    },
+    {
+      "key": "\"Artifact Review Policy\"",
+      "value": "\"产物评审策略\""
+    },
+    {
+      "key": "\"Artifact Viewer\"",
+      "value": "\"产物查看器\""
+    },
+    {
+      "key": "\"Artifact not found\"",
+      "value": "\"未找到产物\""
+    },
+    {
+      "key": "\"Artifact URL not found\"",
+      "value": "\"未找到产物 URL\""
+    },
+    {
+      "key": "\"Artifact image\"",
+      "value": "\"产物图片\""
+    },
+    {
+      "key": "\"Provide Feedback\"",
+      "value": "\"提供反馈\""
+    },
+    {
+      "key": "\"Bug Report\"",
+      "value": "\"Bug 报告\""
+    },
+    {
+      "key": "\"An error occurred while submitting your feedback. Please try again.\"",
+      "value": "\"提交反馈时出错，请重试。\""
+    },
+    {
+      "key": "\"Attach Antigravity server logs\"",
+      "value": "\"附加 Antigravity 服务器日志\""
+    },
+    {
+      "key": "\"Any relevant information\"",
+      "value": "\"任何相关信息\""
+    },
+    {
+      "key": "\"Any error messages\"",
+      "value": "\"任何错误信息\""
+    },
+    {
+      "key": "\"Actual behavior\"",
+      "value": "\"实际行为\""
+    },
+    {
+      "key": "\"Authentication Required\"",
+      "value": "\"需要认证\""
+    },
+    {
+      "key": "\"Notifications\"",
+      "value": "\"通知\""
+    },
+    {
+      "key": "\"Notification Settings\"",
+      "value": "\"通知设置\""
+    },
+    {
+      "key": "\"Open System Preferences\"",
+      "value": "\"打开系统偏好设置\""
+    },
+    {
+      "key": "\"Knowledge\"",
+      "value": "\"知识库\""
+    },
+    {
+      "key": "\"Skills\"",
+      "value": "\"技能\""
+    },
+    {
+      "key": "\"Active Skills\"",
+      "value": "\"活跃技能\""
+    },
+    {
+      "key": "\"Customize Global Skills\"",
+      "value": "\"自定义全局技能\""
+    },
+    {
+      "key": "\"Scheduled Tasks\"",
+      "value": "\"计划任务\""
+    },
+    {
+      "key": "\"Add Scheduled Task\"",
+      "value": "\"添加计划任务\""
+    },
+    {
+      "key": "\"Add scheduled task\"",
+      "value": "\"添加计划任务\""
+    },
+    {
+      "key": "\"Terminal Commands\"",
+      "value": "\"终端命令\""
+    },
+    {
+      "key": "\"Terminal\"",
+      "value": "\"终端\""
+    },
+    {
+      "key": "\"Enable Terminal Sandbox\"",
+      "value": "\"启用终端沙箱\""
+    },
+    {
+      "key": "\"Sandbox Allow Network\"",
+      "value": "\"沙箱允许网络\""
+    },
+    {
+      "key": "\"Enable Shell Integration\"",
+      "value": "\"启用 Shell 集成\""
+    },
+    {
+      "key": "\"Terminal Command Auto Execution\"",
+      "value": "\"终端命令自动执行\""
+    },
+    {
+      "key": "\"Archived\"",
+      "value": "\"已归档\""
+    },
+    {
+      "key": "\"Select a conversation to start\"",
+      "value": "\"选择一个对话开始\""
+    },
+    {
+      "key": "\"Create a project to get started\"",
+      "value": "\"创建一个项目开始\""
+    },
+    {
+      "key": "\"Custom\"",
+      "value": "\"自定义\""
+    },
+    {
+      "key": "\"Global\"",
+      "value": "\"全局\""
+    },
+    {
+      "key": "\"Add\"",
+      "value": "\"添加\""
+    },
+    {
+      "key": "\"Remove\"",
+      "value": "\"移除\""
+    },
+    {
+      "key": "\"Edit\"",
+      "value": "\"编辑\""
+    },
+    {
+      "key": "\"Submit\"",
+      "value": "\"提交\""
+    },
+    {
+      "key": "\"Continue\"",
+      "value": "\"继续\""
+    },
+    {
+      "key": "\"Approve\"",
+      "value": "\"批准\""
+    },
+    {
+      "key": "\"Reject\"",
+      "value": "\"拒绝\""
+    },
+    {
+      "key": "\"Deny\"",
+      "value": "\"拒绝\""
+    },
+    {
+      "key": "\"Allow\"",
+      "value": "\"允许\""
+    },
+    {
+      "key": "\"Close\"",
+      "value": "\"关闭\""
+    },
+    {
+      "key": "\"History\"",
+      "value": "\"历史\""
+    },
+    {
+      "key": "\"Navigation\"",
+      "value": "\"导航\""
+    },
+    {
+      "key": "\"Context\"",
+      "value": "\"上下文\""
+    },
+    {
+      "key": "\"Advanced\"",
+      "value": "\"高级\""
+    },
+    {
+      "key": "\"Reset to default\"",
+      "value": "\"恢复默认\""
+    },
+    {
+      "key": "\"Reset\"",
+      "value": "\"重置\""
+    },
+    {
+      "key": "\"Clear\"",
+      "value": "\"清除\""
+    },
+    {
+      "key": "\"Apply\"",
+      "value": "\"应用\""
+    },
+    {
+      "key": "\"Copy\"",
+      "value": "\"复制\""
+    },
+    {
+      "key": "\"Copy to clipboard\"",
+      "value": "\"复制到剪贴板\""
+    },
+    {
+      "key": "\"Save\"",
+      "value": "\"保存\""
+    },
+    {
+      "key": "\"Refresh\"",
+      "value": "\"刷新\""
+    },
+    {
+      "key": "\"Loading\"",
+      "value": "\"加载中\""
+    },
+    {
+      "key": "\"Loading...\"",
+      "value": "\"加载中...\""
+    },
+    {
+      "key": "\"No results\"",
+      "value": "\"无结果\""
+    },
+    {
+      "key": "\"No conversations yet\"",
+      "value": "\"暂无对话\""
+    },
+    {
+      "key": "\"No agents running\"",
+      "value": "\"无运行中的智能体\""
+    },
+    {
+      "key": "\"No data available\"",
+      "value": "\"无可用数据\""
+    },
+    {
+      "key": "\"Agent data is not available\"",
+      "value": "\"智能体数据不可用\""
+    },
+    {
+      "key": "\"Disabled\"",
+      "value": "\"已禁用\""
+    },
+    {
+      "key": "\"Enabled\"",
+      "value": "\"已启用\""
+    },
+    {
+      "key": "\"Sandboxed\"",
+      "value": "\"沙箱模式\""
+    },
+    {
+      "key": "\"Strict\"",
+      "value": "\"严格模式\""
+    },
+    {
+      "key": "\"Unrestricted\"",
+      "value": "\"无限制\""
+    },
+    {
+      "key": "\"Fast\"",
+      "value": "\"快速\""
+    },
+    {
+      "key": "\"Slow\"",
+      "value": "\"慢速\""
+    },
+    {
+      "key": "\"Task\"",
+      "value": "\"任务\""
+    },
+    {
+      "key": "\"Completed\"",
+      "value": "\"已完成\""
+    },
+    {
+      "key": "\"Running\"",
+      "value": "\"运行中\""
+    },
+    {
+      "key": "\"completed\"",
+      "value": "\"已完成\""
+    },
+    {
+      "key": "\"running\"",
+      "value": "\"运行中\""
+    },
+    {
+      "key": "\"Failed\"",
+      "value": "\"失败\""
+    },
+    {
+      "key": "\"Error\"",
+      "value": "\"错误\""
+    },
+    {
+      "key": "\"Warning\"",
+      "value": "\"警告\""
+    },
+    {
+      "key": "\"OK\"",
+      "value": "\"确定\""
+    },
+    {
+      "key": "\"Yes\"",
+      "value": "\"是\""
+    },
+    {
+      "key": "\"No\"",
+      "value": "\"否\""
+    },
+    {
+      "key": "\"Dismiss\"",
+      "value": "\"忽略\""
+    },
+    {
+      "key": "\"Retry\"",
+      "value": "\"重试\""
+    },
+    {
+      "key": "\"Try Again\"",
+      "value": "\"重试\""
+    },
+    {
+      "key": "\"View\"",
+      "value": "\"查看\""
+    },
+    {
+      "key": "\"View more\"",
+      "value": "\"查看更多\""
+    },
+    {
+      "key": "\"Show all\"",
+      "value": "\"显示全部\""
+    },
+    {
+      "key": "\"Show less\"",
+      "value": "\"收起\""
+    },
+    {
+      "key": "\"Details\"",
+      "value": "\"详情\""
+    },
+    {
+      "key": "\"Updated\"",
+      "value": "\"已更新\""
+    },
+    {
+      "key": "\"Created\"",
+      "value": "\"已创建\""
+    },
+    {
+      "key": "\"Modified\"",
+      "value": "\"已修改\""
+    },
+    {
+      "key": "\"Sort by\"",
+      "value": "\"排序方式\""
+    },
+    {
+      "key": "\"Filter by\"",
+      "value": "\"按...筛选\""
+    },
+    {
+      "key": "\"Group by\"",
+      "value": "\"按...分组\""
+    },
+    {
+      "key": "\"Alphabetical (A-Z)\"",
+      "value": "\"字母顺序 (A-Z)\""
+    },
+    {
+      "key": "\"Alphabetical (Z-A)\"",
+      "value": "\"字母顺序 (Z-A)\""
+    },
+    {
+      "key": "\"Most recent\"",
+      "value": "\"最近\""
+    },
+    {
+      "key": "\"Oldest\"",
+      "value": "\"最早\""
+    },
+    {
+      "key": "\"Click to copy\"",
+      "value": "\"点击复制\""
+    },
+    {
+      "key": "\"Click to copy URL\"",
+      "value": "\"点击复制 URL\""
+    },
+    {
+      "key": "\"Click to copy full command\"",
+      "value": "\"点击复制完整命令\""
+    },
+    {
+      "key": "\"Click to learn more about sources\"",
+      "value": "\"点击了解来源详情\""
+    },
+    {
+      "key": "\"Copied to clipboard\"",
+      "value": "\"已复制到剪贴板\""
+    },
+    {
+      "key": "\"Danger Zone\"",
+      "value": "\"危险区域\""
+    },
+    {
+      "key": "\"Select all\"",
+      "value": "\"全选\""
+    },
+    {
+      "key": "\"Select none\"",
+      "value": "\"取消全选\""
+    },
+    {
+      "key": "\"Learn More\"",
+      "value": "\"了解更多\""
+    },
+    {
+      "key": "\"Learn more\"",
+      "value": "\"了解更多\""
+    },
+    {
+      "key": "\"Learn more about\"",
+      "value": "\"了解更多关于\""
+    },
+    {
+      "key": "\"of the customization budget is available.\"",
+      "value": "\"自定义预算仍可用。\""
+    },
+    {
+      "key": "\"The customization budget is available.\"",
+      "value": "\"自定义预算仍可用。\""
+    }
+  ]
+}

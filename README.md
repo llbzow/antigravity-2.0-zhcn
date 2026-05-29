@@ -101,12 +101,14 @@ rm -rf "$E"
 
 ## 🛠️ 项目结构
 
+- `translations/`
+  - `ui-translations.json` - 翻译词典（604 条，Windows/Linux 共享）。
 - `scripts/`
   - `apply.ps1` - Windows 汉化应用入口与打包脚本。
   - `apply_linux.sh` - Linux 汉化应用入口（Arch/yay）。
   - `extract.ps1` - 提取工具，用于生成版本更新时的文本差异与哈希报告。
-  - `translate_ui.py` - AI UI 面板核心词库与驱动引擎（Windows），通过字面量精确替换。
-  - `translate_ui_linux.py` - AI UI 面板核心词库与驱动引擎（Linux），通过字面量精确替换。
+  - `translate_ui.py` - Windows 翻译引擎，通过字面量精确替换。
+  - `translate_ui_linux.py` - Linux 翻译引擎，从 `ui-translations.json` 加载词典。
   - `bg_install.py` / `run_bg_install.bat` - 异步静默安装触发器。
 - `patches/`
   - `customScheme.ai-ui.js` / `customScheme.core.js` - `main.js` 定向重写与网络拦截的核心补丁模板（Windows）。
@@ -121,9 +123,9 @@ rm -rf "$E"
 
 本项目基于 Python 和 PowerShell 实现无损替换与应用。如果你有兴趣为项目添砖加瓦：
 
-1. **增补词汇**：请直接编辑 `scripts/translate_ui.py` 下的词库字典。确保修改后能在本机通过 `node --check` 以及 `python -m py_compile` 的语法验证。
+1. **增补词汇**：编辑 `translations/ui-translations.json` 添加新条目（格式：`{"key": "英文", "value": "中文"}`），然后运行 `python3 scripts/translate_ui_linux.py` 验证。
 2. **适配新版**：我们在 `patches/ai-ui-compat.json` 中登记了已验证的文件指纹（Bundle Hash）。如果你在最新的 Antigravity 版本下提取了新的指纹，欢迎提交更新。
-3. **翻译注意事项**：避免翻译单个通用英文单词（如 `Tab`、`App`、`Filter`、`Name` 等），它们可能与 JS 内部标识符冲突导致界面白屏。优先翻译完整短语和带上下文的标签。
+3. **翻译注意事项**：请勿翻译单个通用英文单词（如 `Tab`、`App`、`Filter`），它们会与 JS 内部标识符冲突导致界面白屏。优先翻译完整短语。
 
 ## 📄 授权与许可
 
