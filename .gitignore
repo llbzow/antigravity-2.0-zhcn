@@ -20,3 +20,4 @@ node_modules/
 
 # Gemini
 .gemini/
+__pycache__/

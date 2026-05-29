@@ -28,58 +28,20 @@
 
 ### Linux (Arch/yay 等)
 
-> **已测试**：Antigravity 2.0.6, Arch Linux, yay 安装（安装路径 `/opt/Antigravity/`）
+> **已测试**：Antigravity 2.0.6, Arch Linux, yay 安装
 
-**一键安装**：
+1. 克隆项目，进入目录
+2. 双击对应 `.sh` 文件（或用终端执行），脚本会自动检测环境、启停服务、抓取翻译、打补丁、重启：
+   - **完整中文界面**：`./一键汉化-AI界面版.sh`
+   - **基础稳定汉化**：`./一键汉化-基础版.sh`
+   - **恢复英文**：`./一键恢复英文.sh`
 
-```bash
-git clone https://github.com/llbzow/antigravity-2.0-zhcn.git
-cd antigravity-2.0-zhcn
-
-# 1. 先打开 Antigravity（需要从运行实例抓取 UI 翻译包）
-antigravity &
-
-# 2. 等待启动完成（约 5 秒），然后运行汉化
-sudo bash scripts/apply_linux.sh --ai-ui
-
-# 3. 重新打开 Antigravity 即可看到中文界面
-```
-
-**手动步骤**（如果一键脚本失败）：
-
-```bash
-# 1. 从运行中的 Antigravity 抓取 UI bundle
-PORT=$(grep -oP 'Local:\s+https://127\.0\.0\.1:\K\d+' ~/.config/Antigravity/logs/main.log | tail -1)
-curl -sk "https://127.0.0.1:$PORT/main.js" -o /tmp/agy_ui_main.js
-
-# 2. 生成中文翻译包
-python3 scripts/translate_ui_linux.py --input /tmp/agy_ui_main.js --output ~/.config/Antigravity/zh_cn_ui_main.js
-
-# 3. 关闭 Antigravity，用任务管理器或 kill -9 强制结束
-
-# 4. 打补丁到 app.asar
-sudo bash -c '
-ASAR=/opt/Antigravity/resources/app.asar
-E=/tmp/agy_patch
-npx asar extract "$ASAR" "$E"
-rm -rf "$E/node_modules/chrome-devtools-mcp"
-cp patches/customScheme.ai-ui.v2.js "$E/dist/customScheme.js"
-npx asar pack "$E" "$ASAR"
-rm -rf "$E"
-'
-
-# 5. 重新打开 Antigravity
-```
+翻译覆盖率 **604 条**，覆盖设置、智能体、权限、快捷键、导航、对话等核心 UI。
 
 **注意事项**：
-
-- `yay -Syu` 或 `pacman -Syu` 更新 Antigravity 后会覆盖补丁，需重新运行脚本
-- 若汉化后界面空白/闪退，可恢复原始 `app.asar`：
-  ```bash
-  sudo cp ~/.cache/yay/antigravity/src/Antigravity-x64/resources/app.asar /opt/Antigravity/resources/app.asar
-  rm ~/.config/Antigravity/zh_cn_ui_main.js
-  ```
-- 翻译覆盖率：**604 条**，覆盖设置、智能体、权限、快捷键、导航、对话等核心 UI
+- `yay -Syu` 或 `pacman -Syu` 更新 Antigravity 后会覆盖补丁，重新运行脚本即可
+- 脚本需要 `sudo` 权限修改 `/opt/Antigravity/resources/app.asar`
+- 依赖：`python3`、`node`（含 `npx`）、`curl`（通常已预装）
 5. **注意**：`yay`/`pacman` 更新 Antigravity 后会覆盖补丁，需重新运行脚本
 
 ## 📦 命令行方式
