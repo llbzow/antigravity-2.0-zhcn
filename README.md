@@ -16,27 +16,30 @@
 
 ## 📦 小白使用方式
 
-### 下载什么
+### Windows
 
-1. 在 GitHub 项目页点击 `Code`
-2. 点击 `Download ZIP`
-3. 解压到任意文件夹
+1. 在 GitHub 项目页点击 `Code` → `Download ZIP`，解压到任意文件夹
+2. 先彻底关闭 Antigravity
+3. 双击对应 `.bat` 文件：
+   - **完整中文界面**：`一键汉化-AI界面版.bat`
+   - **基础稳定汉化**：`一键汉化-基础版.bat`
+   - **恢复英文**：`一键恢复英文.bat`
+4. 等脚本跑完，重新打开 Antigravity
 
-### 双击哪个文件
+### Linux (Arch/yay 等)
 
-- 想要完整中文界面：
-  双击根目录的 [一键汉化-AI界面版.bat](/G:/GEMINI-xiangmu/AGY/AGY-汉化/一键汉化-AI界面版.bat)
-- 只想要基础稳定汉化：
-  双击根目录的 [一键汉化-基础版.bat](/G:/GEMINI-xiangmu/AGY/AGY-汉化/一键汉化-基础版.bat)
-- 想恢复英文：
-  双击根目录的 [一键恢复英文.bat](/G:/GEMINI-xiangmu/AGY/AGY-汉化/一键恢复英文.bat)
-
-### 使用步骤
-
-1. 先彻底关闭 Antigravity
-2. 双击对应的 `.bat`
-3. 等脚本跑完
+1. 克隆项目：
+   ```bash
+   git clone https://github.com/llbzow/antigravity-2.0-zhcn.git
+   cd antigravity-2.0-zhcn
+   ```
+2. 确保 Antigravity 在运行（AI 面板汉化需要从运行实例抓取 UI bundle）
+3. 运行汉化脚本：
+   ```bash
+   sudo bash scripts/apply_linux.sh --ai-ui
+   ```
 4. 重新打开 Antigravity
+5. **注意**：`yay`/`pacman` 更新 Antigravity 后会覆盖补丁，需重新运行脚本
 
 ## 📦 命令行方式
 
@@ -58,9 +61,11 @@
 ## 🛠️ 项目结构
 
 - `scripts/`
-  - `apply.ps1` - 汉化应用入口与打包脚本。
+  - `apply.ps1` - Windows 汉化应用入口与打包脚本。
+  - `apply_linux.sh` - Linux 汉化应用入口（Arch/yay）。
   - `extract.ps1` - 提取工具，用于生成版本更新时的文本差异与哈希报告。
-  - `translate_ui.py` - AI UI 面板核心词库与驱动引擎，通过字面量精确替换。
+  - `translate_ui.py` - AI UI 面板核心词库与驱动引擎（Windows），通过字面量精确替换。
+  - `translate_ui_linux.py` - AI UI 面板核心词库与驱动引擎（Linux），通过字面量精确替换。
   - `bg_install.py` / `run_bg_install.bat` - 异步静默安装触发器。
 - `patches/`
   - `customScheme.ai-ui.js` / `customScheme.core.js` - `main.js` 定向重写与网络拦截的核心补丁模板。
