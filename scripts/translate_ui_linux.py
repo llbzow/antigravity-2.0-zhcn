@@ -1,32 +1,58 @@
 #!/usr/bin/env python3
+
 """Linux-compatible UI translation script for Antigravity 2.0."""
+
 import os
+
 import sys
+
 import re
+
 import argparse
 
 
+
+
+
 def to_single_quoted(value):
+
     escaped = value.replace("\\", "\\\\").replace("'", "\\'")
+
     return f"'{escaped}'"
 
 
+
+
+
 def apply_safe_literal_replacement(content, original_literal, translated_literal):
+
     source_value = original_literal[1:-1]
+
     target_value = translated_literal[1:-1]
+
     before = content
+
     content = content.replace(repr(source_value).replace('"', "'"), to_single_quoted(target_value))
+
     content = content.replace(f'"{source_value}"', f'"{target_value}"')
+
     content = content.replace(to_single_quoted(source_value), to_single_quoted(target_value))
+
     content = content.replace(
+
         '"' + source_value.replace("\\", "\\\\").replace('"', '\\"') + '"',
+
         '"' + target_value.replace("\\", "\\\\").replace('"', '\\"') + '"',
+
     )
+
     return content, content != before
 
 
+
+
+
 translations = {
-    # Navigation / Sidebars
     'label:"New Conversation"': 'label:"新建对话"',
     'label:"Create Project"': 'label:"创建项目"',
     'label:"Command Palette"': 'label:"命令面板"',
@@ -62,7 +88,6 @@ translations = {
     '"Chat Settings"': '"聊天设置"',
     '"Verbose agent chat"': '"详细智能体对话"',
     '"Display and preserve intermediate thinking steps"': '"显示并保留中间思考步骤"',
-    '"Configure the agent\'s visual theme and display preferences."': '"配置智能体的视觉主题和显示偏好。"',
     '"Select light, dark, or inherit system settings."': '"选择浅色、深色或跟随系统设置。"',
     '"Light Theme"': '"浅色主题"',
     '"Dark Theme"': '"深色主题"',
@@ -72,14 +97,9 @@ translations = {
     '"Background"': '"背景"',
     '"Foreground"': '"前景"',
     '"Accent"': '"强调色"',
-    '"Models"': '"模型"',
     '"Customizations"': '"自定义"',
-    '"Browser"': '"浏览器"',
-    '"App"': '"应用"',
-    '"Permissions"': '"权限"',
     '"Notifications"': '"通知"',
     '"Editor"': '"编辑器"',
-    '"Tab"': '"Tab"',
     '"Best of N"': '"Best of N"',
     '"Browser Settings"': '"浏览器设置"',
     '"App Settings"': '"应用设置"',
@@ -137,7 +157,6 @@ translations = {
     '"MCP Tools"': '"MCP 工具"',
     '"Danger Zone"': '"危险区域"',
     '"Delete Project"': '"删除项目"',
-    '"Open"': '"打开"',
     '"Learn more about Unrestricted"': '"了解更多关于"无限制""',
     '"Learn more about "': '"了解更多关于 "',
     '"Rules"': '"规则"',
@@ -224,12 +243,9 @@ translations = {
     '"When enabled, "Explain and Fix" actions will continue in the current conversation instead of starting a new one."': '"启用后，"解释并修复"操作会在当前对话中继续，而不是新建对话。"',
     '"When enabled, terminal commands run with sandbox restrictions."': '"启用后，终端命令将在沙箱限制下运行。"',
     '"When enabled, sandboxed commands are allowed to make network requests."': '"启用后，沙箱中的命令可以发起网络请求。"',
-    '"When enabled, Agent will use IDE\'s shell integration to detect and report terminal command execution. When disabled, the agent will use its own shell. Restart the application for this to take effect."': '"启用后，智能体会使用 IDE 的 Shell 集成来检测并报告终端命令执行情况。禁用后，智能体将使用自己的 Shell。重新启动应用后生效。"',
-    '"When enabled, Agent will use IDE\'s shell integration to detect and report terminal command execution."': '"启用后，智能体会使用 IDE 的 Shell 集成来检测并报告终端命令执行情况。"',
     '"When enabled, Agent is given awareness of lint errors created by its edits and may fix them without explicit user prompting."': '"启用后，智能体会感知自身编辑产生的 Lint 错误，并可在无需明确提示的情况下修复。"',
     '"When enabled, the agent will be able to access past conversations to inform its responses."': '"启用后，智能体可以访问历史对话来辅助生成回复。"',
     '"Open files in the background if Agent creates or edits them"': '"当智能体创建或编辑文件时，在后台自动打开这些文件。"',
-    '"To modify notification settings, open your operating system\'s system preferences."': '"若要修改通知设置，请打开操作系统的系统设置。"',
     '"Manage your plan, credentials, and general preferences."': '"管理你的套餐、凭据和通用偏好设置。"',
     '"When toggled on, Antigravity collects usage data to help Google enhance performance and features."': '"开启后，Antigravity 会收集使用数据，以帮助 Google 改进性能和功能。"',
     '"Receive product updates, tips, and promotions from Google Antigravity via email."': '"通过电子邮件接收来自 Google Antigravity 的产品更新、技巧和推广信息。"',
@@ -278,7 +294,6 @@ translations = {
     '"Learn more about"': '"了解更多关于"',
     '"Manage project folders, agent settings, and permissions."': '"管理项目文件夹、智能体设置和权限。"',
     '"Choose a predefined security preset for the agent. This controls terminal auto-execution policy, and file access policy."': '"为智能体选择预定义的安全预设。它会控制终端自动执行策略和文件访问策略。"',
-    '"Specifies Agent\'s behavior when asking for review on artifacts, which are documents it creates to enable a richer conversation experience."': '"指定智能体在请求评审产物时的行为。产物是它为提供更丰富对话体验而创建的文档。"',
     '"Inherits from global settings. Local permissions have higher priority. Learn more."': '"继承全局设置。本地权限具有更高优先级。了解更多。"',
     '"Inherits from global settings. Local permissions have higher priority. "': '"继承全局设置。本地权限具有更高优先级。"',
     '"Learn more."': '"了解更多。"',
@@ -292,7 +307,6 @@ translations = {
     '"The customization budget is available."': '"自定义预算仍可用。"',
     '"Permanently delete this project and all of its conversations."': '"永久删除该项目及其所有对话。"',
     '"Getting started with a Project"': '"项目入门指南"',
-    '"Now that you\'ve created a project, configure your project\'s agent settings or start a conversation."': '"项目创建成功！现在可以配置项目智能体设置，或者直接开始对话。"',
     '"Learn more"': '"了解更多"',
     '"Learn More"': '"了解更多"',
     '"Submit"': '"提交"',
@@ -318,13 +332,12 @@ translations = {
     'Learn more about ': '了解更多关于 ',
     'Inherits from global settings. Local permissions have higher priority. ': '继承全局设置。本地权限具有更高优先级。',
     'of the customization budget is available.': '的自定义预算仍可用。',
-    'Rules\n(1.6%)': '规则\n(1.6%)',
+    'Rules\\n(1.6%)': '规则\\n(1.6%)',
     'Show 1 breakdown': '显示 1 项明细',
     'Learn more about Unrestricted': '了解更多关于无限制',
     'Learn more about 无限制': '了解更多关于无限制',
     'Learn more about 无限制"': '了解更多关于无限制"',
     'Inherits from global settings. Local permissions have higher priority. 了解更多.': '继承全局设置。本地权限具有更高优先级。了解更多。',
-    # ===== 系统窗口与导航 =====
     '"Check for Updates"': '"检查更新"',
     '"Command Center"': '"命令中心"',
     '"Auxiliary Pane"': '"辅助面板"',
@@ -342,7 +355,6 @@ translations = {
     '"Collapse All"': '"全部折叠"',
     '"Close Tab"': '"关闭标签页"',
     '"Close Terminal Tab"': '"关闭终端标签页"',
-    # ===== 文件与路径操作 =====
     '"Open File"': '"打开文件"',
     '"Open Folder"': '"打开文件夹"',
     '"Close Folder"': '"关闭文件夹"',
@@ -353,7 +365,6 @@ translations = {
     '"Add Folder"': '"添加文件夹"',
     '"Add recent remote workspace"': '"添加最近远程工作区"',
     '"Clone current workspace into a new independent workspace"': '"将当前工作区克隆为新的独立工作区"',
-    # ===== 项目管理 =====
     '"Project General"': '"项目常规"',
     '"Project Folders"': '"项目文件夹"',
     '"Project Agent"': '"项目智能体"',
@@ -363,7 +374,6 @@ translations = {
     '"Create Project"': '"创建项目"',
     '"New Conversation"': '"新建对话"',
     '"Configure workspace-specific permissions, resources, and customizations."': '"配置工作区特定的权限、资源和自定义内容。"',
-    # ===== 智能体设置 =====
     '"Agent Settings"': '"智能体设置"',
     '"Agent Behavior"': '"智能体行为"',
     '"Agent Hooks Configuration"': '"智能体钩子配置"',
@@ -396,7 +406,6 @@ translations = {
     '"Blocked on Your Input"': '"等待你的输入"',
     '"Action Required"': '"需要操作"',
     '"agent requires permission to continue."': '"智能体需要你的许可才能继续。"',
-    # ===== 对话与消息 =====
     '"Chat Settings"': '"聊天设置"',
     '"Chat Model Metadata"': '"对话模型元数据"',
     '"Verbose agent chat"': '"详细智能体对话"',
@@ -416,8 +425,6 @@ translations = {
     '"Analyzed content"': '"已分析内容"',
     '"Analyzing content"': '"正在分析内容"',
     '"Cleared Count"': '"清除计数"',
-    # ===== 模型与配额 =====
-    '"Models"': '"模型"',
     '"Add Model"': '"添加模型"',
     '"Add Custom Model"': '"添加自定义模型"',
     '"Chat Model Metadata"': '"对话模型元数据"',
@@ -427,7 +434,6 @@ translations = {
     '"Your Plan:"': '"你的套餐："',
     '"Upgrade"': '"升级"',
     '"Add all"': '"添加全部"',
-    # ===== 安全与权限 =====
     '"Security Preset"': '"安全预设"',
     '"Agent security mode"': '"智能体安全模式"',
     '"Agent always asks for review."': '"智能体始终请求评审。"',
@@ -452,7 +458,6 @@ translations = {
     '"Configure allowed commands outside the sandbox."': '"配置沙箱外允许的命令。"',
     '"Configure allowed terminal commands."': '"配置允许的终端命令。"',
     '"Configure external tools via Model Context Protocol."': '"通过 Model Context Protocol 配置外部工具。"',
-    # ===== 浏览器 =====
     '"Browser Settings"': '"浏览器设置"',
     '"Browser Task"': '"浏览器任务"',
     '"Browser Subagent Viewer"': '"浏览器子智能体查看器"',
@@ -473,7 +478,6 @@ translations = {
     '"Active Browser pages"': '"活跃浏览器页面"',
     '"Capture console logs"': '"捕获控制台日志"',
     '"Capture screenshot"': '"捕获截图"',
-    # ===== 外观与主题 =====
     '"Appearance"': '"外观"',
     '"Theme"': '"主题"',
     '"Light Theme"': '"浅色主题"',
@@ -486,13 +490,10 @@ translations = {
     '"Background"': '"背景"',
     '"Foreground"': '"前景"',
     '"Accent"': '"强调色"',
-    '"Configure the agent\'s visual theme and display preferences."': '"配置智能体的视觉主题和显示偏好。"',
     '"Active background color of the command center"': '"命令中心活动背景色"',
     '"Active border color of the command center"': '"命令中心活动边框色"',
     '"Active foreground color of the command center"': '"命令中心活动前景色"',
-    # ===== 代码与编辑器 =====
     '"Editor"': '"编辑器"',
-    '"Tab"': '"Tab"',
     '"Code Search"': '"代码搜索"',
     '"Code Context Items"': '"代码上下文项"',
     '"Show Selection Actions"': '"显示选区操作"',
@@ -503,7 +504,6 @@ translations = {
     '"Highlight After Accept"': '"接受后高亮"',
     '"Tab Gitignore Access"': '"Tab 访问 .gitignore"',
     '"Suggestions"': '"建议"',
-    # ===== 快捷键 =====
     '"Shortcuts"': '"快捷键"',
     '"Keyboard Shortcuts"': '"键盘快捷键"',
     '"Open Keyboard Shortcuts"': '"打开快捷键"',
@@ -518,9 +518,7 @@ translations = {
     '"Toggle Model Selector"': '"切换模型选择器"',
     '"Toggle Voice Recording"': '"切换语音录制"',
     '"Find in Pane"': '"在面板中查找"',
-    # ===== 账户与应用 =====
     '"Account"': '"账户"',
-    '"App"': '"应用"',
     '"App Settings"': '"应用设置"',
     '"General"': '"通用"',
     '"Google Drive"': '"谷歌云端硬盘"',
@@ -536,7 +534,6 @@ translations = {
     '"Marketing Emails"': '"营销邮件"',
     '"When toggled on, Antigravity collects usage data to help Google enhance performance and features."': '"开启后，Antigravity 会收集使用数据以帮助 Google 改进产品。"',
     '"Receive product updates, tips, and promotions from Google Antigravity via email."': '"通过邮件接收 Antigravity 产品更新、技巧和推广信息。"',
-    # ===== MCP 与插件 =====
     '"MCP Tools"': '"MCP 工具"',
     '"MCP Servers"': '"MCP 服务器"',
     '"Add MCP"': '"添加 MCP"',
@@ -546,7 +543,6 @@ translations = {
     '"External tools the agent can call via Model Context Protocol."': '"智能体可通过 MCP 调用的外部工具。"',
     '"All tools (*)"': '"所有工具 (*)"',
     '"Build With Google Plugins"': '"通过 Google 插件构建"',
-    # ===== 产物与评论 =====
     '"Artifact Comments"': '"产物评论"',
     '"Artifact Name"': '"产物名称"',
     '"Artifact Review Policy"': '"产物评审策略"',
@@ -554,8 +550,6 @@ translations = {
     '"Artifact not found"': '"未找到产物"',
     '"Artifact URL not found"': '"未找到产物 URL"',
     '"Artifact image"': '"产物图片"',
-    '"Specifies Agent\'s behavior when asking for review on artifacts, which are documents it creates to enable a richer conversation experience."': '"指定智能体在请求评审产物时的行为。"',
-    # ===== 反馈与帮助 =====
     '"Provide Feedback"': '"提供反馈"',
     '"Bug Report"': '"Bug 报告"',
     '"An error occurred while submitting your feedback. Please try again."': '"提交反馈时出错，请重试。"',
@@ -564,37 +558,29 @@ translations = {
     '"Any error messages"': '"任何错误信息"',
     '"Actual behavior"': '"实际行为"',
     '"Authentication Required"': '"需要认证"',
-    # ===== 通知 =====
     '"Notifications"': '"通知"',
     '"Notification Settings"': '"通知设置"',
     '"Open System Preferences"': '"打开系统偏好设置"',
-    '"To modify notification settings, open your operating system\'s system preferences."': '"请在操作系统偏好设置中修改通知设置。"',
-    # ===== 知识库与技能 =====
     '"Knowledge"': '"知识库"',
     '"Skills"': '"技能"',
     '"Active Skills"': '"活跃技能"',
     '"Customize Global Skills"': '"自定义全局技能"',
-    # ===== 计划任务 =====
     '"Scheduled Tasks"': '"计划任务"',
     '"Add Scheduled Task"': '"添加计划任务"',
     '"Add scheduled task"': '"添加计划任务"',
-    # ===== 终端命令 =====
     '"Terminal Commands"': '"终端命令"',
     '"Terminal"': '"终端"',
     '"Enable Terminal Sandbox"': '"启用终端沙箱"',
     '"Sandbox Allow Network"': '"沙箱允许网络"',
     '"Enable Shell Integration"': '"启用 Shell 集成"',
     '"Terminal Command Auto Execution"': '"终端命令自动执行"',
-    # ===== 其他常用 UI =====
     '"Archived"': '"已归档"',
     '"Select a conversation to start"': '"选择一个对话开始"',
     '"Create a project to get started"': '"创建一个项目开始"',
-    '"Configuration"': '"配置"',
     '"Custom"': '"自定义"',
     '"Global"': '"全局"',
     '"Add"': '"添加"',
     '"Remove"': '"移除"',
-    '"Delete"': '"删除"',
     '"Edit"': '"编辑"',
     '"Submit"': '"提交"',
     '"Continue"': '"继续"',
@@ -603,7 +589,6 @@ translations = {
     '"Deny"': '"拒绝"',
     '"Allow"': '"允许"',
     '"Close"': '"关闭"',
-    '"Search"': '"搜索"',
     '"History"': '"历史"',
     '"Navigation"': '"导航"',
     '"Context"': '"上下文"',
@@ -649,42 +634,21 @@ translations = {
     '"Show all"': '"显示全部"',
     '"Show less"': '"收起"',
     '"Details"': '"详情"',
-    '"More"': '"更多"',
-    '"Less"': '"收起"',
     '"Updated"': '"已更新"',
     '"Created"': '"已创建"',
     '"Modified"': '"已修改"',
-    '"Today"': '"今天"',
-    '"Yesterday"': '"昨天"',
-    '"Tomorrow"': '"明天"',
     '"Sort by"': '"排序方式"',
-    '"Filter"': '"筛选"',
     '"Filter by"': '"按...筛选"',
     '"Group by"': '"按...分组"',
     '"Alphabetical (A-Z)"': '"字母顺序 (A-Z)"',
     '"Alphabetical (Z-A)"': '"字母顺序 (Z-A)"',
     '"Most recent"': '"最近"',
     '"Oldest"': '"最早"',
-    '"Name"': '"名称"',
-    '"Type"': '"类型"',
-    '"Size"': '"大小"',
-    '"Date"': '"日期"',
-    '"Status"': '"状态"',
-    '"Language"': '"语言"',
-    '"Owner"': '"所有者"',
-    '"Version"': '"版本"',
     '"Click to copy"': '"点击复制"',
     '"Click to copy URL"': '"点击复制 URL"',
     '"Click to copy full command"': '"点击复制完整命令"',
     '"Click to learn more about sources"': '"点击了解来源详情"',
-    '"Copied"': '"已复制"',
     '"Copied to clipboard"': '"已复制到剪贴板"',
-    '"Share"': '"分享"',
-    '"Export"': '"导出"',
-    '"Import"': '"导入"',
-    '"Download"': '"下载"',
-    '"Upload"': '"上传"',
-    '"Preview"': '"预览"',
     '"Danger Zone"': '"危险区域"',
     '"Select all"': '"全选"',
     '"Select none"': '"取消全选"',
@@ -694,47 +658,3 @@ translations = {
     '"of the customization budget is available."': '"自定义预算仍可用。"',
     '"The customization budget is available."': '"自定义预算仍可用。"',
 }
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True, help="Path to the Antigravity UI main bundle.")
-    parser.add_argument("--output", required=True, help="Output path for translated bundle.")
-    args = parser.parse_args()
-
-    print(f"Reading from: {args.input}")
-    with open(args.input, "r", encoding="utf-8", errors="ignore") as f:
-        content = f.read()
-
-    print(f"Bundle size: {len(content)} bytes")
-    print("Applying translations...")
-    replaced_count = 0
-    literal_pattern = re.compile(r"""^(["']).*\1$""")
-
-    for original, translated in translations.items():
-        replaced = False
-        if literal_pattern.match(original) and literal_pattern.match(translated):
-            content, replaced = apply_safe_literal_replacement(content, original, translated)
-        else:
-            if original in content:
-                content = content.replace(original, translated)
-                replaced = True
-            else:
-                alt_original = original.replace('"', "'")
-                alt_translated = translated.replace('"', "'")
-                if alt_original in content:
-                    content = content.replace(alt_original, alt_translated)
-                    replaced = True
-        if replaced:
-            replaced_count += 1
-
-    print(f"Replaced {replaced_count} of {len(translations)} strings.")
-
-    os.makedirs(os.path.dirname(args.output), exist_ok=True)
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(content)
-    print(f"Written to: {args.output}")
-
-
-if __name__ == "__main__":
-    main()
